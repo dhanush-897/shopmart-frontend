@@ -15,7 +15,7 @@ import ProfileModal from './components/modals/ProfileModal';
 import CheckoutModal from './components/modals/CheckoutModal';
 import FeedbackModal from './components/modals/FeedbackModal';
 
-const BASE_API_URL = 'mongodb+srv://shopmart:mzghpqrt1122@smartshop.f8vgzdx.mongodb.net/?retryWrites=true&w=majority&appName=smartshop';
+const BASE_API_URL = 'https://shopmart-backend-2-wi4e.onrender.com';
 const USER_STORAGE_KEY = 'shopsmart_user_session';
 
 function App() {

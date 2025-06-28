@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({ user, onNav, onProfile, onLogout }) => (
+const Header = ({ user, cartCount = 0, wishlistCount = 0, onNav, onProfile, onLogout }) => (
   <header className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
     <div className="container-fluid container">
       <h1 className="navbar-brand mb-0 h1 bg-dark bg-opacity-75 px-3 py-1 rounded">
@@ -18,7 +18,7 @@ const Header = ({ user, onNav, onProfile, onLogout }) => (
             <li className="nav-item">
               <span className="nav-link text-white fs-5 fw-medium position-relative" style={{ cursor: 'pointer' }} onClick={() => onNav('cart')}>
                 Cart
-                <span className="badge rounded-pill bg-danger position-absolute">0</span>
+                {/* Remove badge/dot for cart */}
               </span>
             </li>
           )}
@@ -26,7 +26,7 @@ const Header = ({ user, onNav, onProfile, onLogout }) => (
             <li className="nav-item">
               <span className="nav-link text-white fs-5 fw-medium position-relative" style={{ cursor: 'pointer' }} onClick={() => onNav('wishlist')}>
                 Wishlist
-                <span className="badge rounded-pill bg-danger position-absolute">0</span>
+                {/* Remove badge/dot for wishlist */}
               </span>
             </li>
           )}

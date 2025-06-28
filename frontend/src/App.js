@@ -15,7 +15,7 @@ import ProfileModal from './components/modals/ProfileModal';
 import CheckoutModal from './components/modals/CheckoutModal';
 import FeedbackModal from './components/modals/FeedbackModal';
 
-const BASE_API_URL = 'https://shopmart-backend-2-wi4e.onrender.com';
+const BASE_API_URL = 'http://localhost:5000';
 const USER_STORAGE_KEY = 'shopsmart_user_session';
 
 function App() {
@@ -95,7 +95,7 @@ function App() {
   }, [user]);
 
   // --- Navigation ---
-  const handleNav = (target) => setPage(target);
+  //const handleNav = (target) => setPage(target);
 
   // --- Product Fetch ---
   useEffect(() => {
@@ -629,7 +629,7 @@ function App() {
         user={user}
         cartCount={cart.items.length}
         wishlistCount={wishlist.items.length}
-        onNav={handleNav}
+        onNav={setPage}
         onProfile={() => setShowProfile(true)}
         onLogout={handleLogout}
       />

@@ -4,7 +4,7 @@ const Header = ({ user, cartCount = 0, wishlistCount = 0, onNav, onProfile, onLo
   <header className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
     <div className="container-fluid container">
       <h1 className="navbar-brand mb-0 h1 bg-dark bg-opacity-75 px-3 py-1 rounded">
-        <span className="text-white text-decoration-none" style={{ cursor: 'pointer' }} onClick={() => onNav('products')}>Mahesh Kiran & Fancy</span>
+        <span className="text-white text-decoration-none" style={{ cursor: 'pointer' }} onClick={() => onNav('products')}>ShopSmart</span>
       </h1>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
